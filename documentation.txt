@@ -1,0 +1,80 @@
+Name: Abhishek H S
+Date: 06/11/2025
+Project Title: Address Book 
+
+Project Description
+
+The Address Book is a simple and user-friendly program developed in C language to store and manage contact information such as Name, Phone Number, and Email ID.
+The program allows users to add, search, edit, delete, list, and save contacts.
+All contact data is saved in a CSV file, so it remains available even after the program is closed.
+
+When the program starts, it automatically loads a few dummy contacts (like John, Alice, and Bob) for testing.
+It then checks for any previously saved contacts in the file and loads them.
+The system is menu-driven and includes input validation to prevent duplicate or invalid entries.
+
+Main Features
+
+Add Contact – Allows users to add new contacts after validation.
+
+Search Contact – Search for contacts by name, phone number, or email ID.
+
+Edit Contact – Update details of an existing contact.
+
+Delete Contact – Remove a contact by name, phone, or email.
+
+List Contacts – Display all stored contacts neatly.
+
+Save Contacts – Save all contacts into the CSV file.
+
+Exit – Safely exit the program after saving.
+
+Validation Rules
+
+Name: Must contain only alphabets and spaces.
+
+Phone Number: Must have exactly 10 digits and be unique.
+
+Email: Must be lowercase, in correct format, and end with @gmail.com.
+
+These validations ensure that only accurate and unique contact data is stored.
+
+File Handling
+
+The program uses a file named contacts.csv to store user-added contacts permanently.
+Dummy contacts are not written to the file.
+When the program starts again, all saved contacts are automatically loaded back into memory.
+
+Functions Used:
+
+saveContactsToFile() → Saves contacts to CSV.
+
+loadContactsFromFile() → Loads saved contacts during initialization.
+
+Example Format:
+
+#5#
+nithi,2323232323,n@gmail.com
+dhanu,3453426354,g@gmail.com
+gowri g,1323446578,b@gmail.com
+liki g,1232123432,l@gmail.com
+abhi,4567654345,aa@gmail.com
+
+Files and Functions
+
+main.c – Displays the menu and calls respective functions.
+
+contact.c – Handles core features like add, search, edit, delete, and list.
+
+validate.c – Validates name, phone, and email inputs.
+
+file.c – Manages saving and loading of contacts.
+
+populate.c – Adds 10 dummy contacts at program startup.
+
+Applications
+
+Personal or professional contact management.
+
+Small office or student contact directory.
+
+Useful for learning file handling, modular coding, and structure usage in C.
